@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exhaust Custom 77 – Lignes d'échappement sur mesure</title>
+  <meta name="description" content="Exhaust Custom 77 : fabrication de lignes d'échappement sur mesure, suppression FAP/GPF/catalyseur, downpipes, valves, embouts. Soudure, fabrication, mécanique en Seine-et-Marne." />
+  <meta name="keywords" content="échappement sur mesure, suppression FAP, suppression GPF, downpipe, valve d'échappement, ligne inox, 77, Seine-et-Marne" />
+  <meta property="og:title" content="Exhaust Custom 77 – Lignes d'échappement sur mesure" />
+  <meta property="og:description" content="Artisan spécialisé dans la fabrication et modification d'échappements automobiles haut de gamme." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="og-preview.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── RESET & BASE ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black:   #080808;
+      --carbon:  #111111;
+      --charcoal:#1C1C1C;
+      --mid:     #2A2A2A;
+      --border:  #2E2E2E;
+      --muted:   #666666;
+      --silver:  #A0A0A0;
+      --white:   #F0F0F0;
+      --red:     #C8102E;
+      --red-dim: #8B0B1F;
+      --gold:    #C9A227;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body:    'Inter', sans-serif;
+      --font-tech:    'Rajdhani', sans-serif;
+      --nav-h: 72px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--red); color: #fff; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+
+    /* ─── SCROLLBAR ─────────────────────────────────────────── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 2px; }
+
+    /* ─── NAV ────────────────────────────────────────────────── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(20px, 5vw, 60px);
+      background: transparent;
+      transition: background .4s ease, backdrop-filter .4s ease;
+    }
+    #nav.scrolled {
+      background: rgba(8,8,8,.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.7rem;
+      letter-spacing: .08em;
+      line-height: 1;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex; gap: 36px; list-style: none;
+      font-family: var(--font-tech); font-size: .95rem; font-weight: 600;
+      letter-spacing: .12em; text-transform: uppercase;
+    }
+    .nav-links a {
+      position: relative; padding-bottom: 4px;
+      color: var(--silver); transition: color .25s;
+    }
+    .nav-links a::after {
+      content:''; position: absolute; bottom:0; left:0; width:0; height:1px;
+      background: var(--red); transition: width .3s ease;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      font-family: var(--font-tech); font-weight: 700; font-size: .85rem;
+      letter-spacing: .15em; text-transform: uppercase;
+      padding: 10px 22px; border: 1px solid var(--red);
+      color: var(--white); background: transparent;
+      cursor: pointer; transition: background .25s, color .25s;
+    }
+    .nav-cta:hover { background: var(--red); color: #fff; }
+    .burger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; background: none; border: none; padding: 4px;
+    }
+    .burger span {
+      display: block; width: 26px; height: 2px;
+      background: var(--white); transition: transform .3s, opacity .3s;
+    }
+    .mobile-menu {
+      display: none; position: fixed; inset: 0; z-index: 99;
+      background: var(--black); flex-direction: column;
+      align-items: center; justify-content: center; gap: 36px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--font-display); font-size: 2.8rem;
+      letter-spacing: .1em; color: var(--silver); transition: color .2s;
+    }
+    .mobile-menu a:hover { color: var(--white); }
+    .mobile-close {
+      position: absolute; top: 22px; right: clamp(20px,5vw,60px);
+      background: none; border: none; color: var(--white);
+      font-size: 2rem; cursor: pointer;
+    }
+
+    /* ─── HERO ───────────────────────────────────────────────── */
+    #hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #0A0A0A 0%, #1a1a1a 100%);
+    }
+    /* Texture subtile */
+    .hero-bg::before {
+      content:''; position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    /* Gradient rouge en bas */
+    .hero-bg::after {
+      content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 200px;
+      background: linear-gradient(to top, rgba(200,16,46,.08), transparent);
+    }
+    /* SVG exhaust line décorative */
+    .hero-exhaust-svg {
+      position: absolute; right: -80px; top: 50%;
+      transform: translateY(-50%);
+      width: min(700px, 70vw); opacity: .06;
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 0 clamp(20px, 8vw, 120px);
+      max-width: 820px;
+    }
+    .hero-eyebrow {
+      font-family: var(--font-tech); font-weight: 600;
+      font-size: .8rem; letter-spacing: .3em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 20px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .hero-eyebrow::before {
+      content:''; display: block; width: 40px; height: 1px; background: var(--red);
+    }
+    .hero-h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 9vw, 8rem);
+      line-height: .92; letter-spacing: .04em;
+      color: var(--white);
+    }
+    .hero-h1 em { color: var(--gold); font-style: normal; }
+    .hero-sub {
+      margin-top: 28px;
+      font-size: clamp(.95rem, 1.5vw, 1.1rem);
+      color: var(--silver); max-width: 480px; line-height: 1.7;
+    }
+    .hero-actions {
+      margin-top: 44px; display: flex; gap: 16px; flex-wrap: wrap;
+    }
+    .btn-primary {
+      font-family: var(--font-tech); font-weight: 700; font-size: .9rem;
+      letter-spacing: .2em; text-transform: uppercase;
+      padding: 16px 36px; background: var(--red);
+      color: #fff; border: 1px solid var(--red);
+      cursor: pointer; transition: background .25s, transform .2s;
+      display: inline-flex; align-items: center; gap: 10px;
+    }
+    .btn-primary:hover { background: var(--red-dim); transform: translateX(3px); }
+    .btn-secondary {
+      font-family: var(--font-tech); font-weight: 600; font-size: .9rem;
+      letter-spacing: .2em; text-transform: uppercase;
+      padding: 16px 36px; background: transparent;
+      color: var(--silver); border: 1px solid var(--border);
+      cursor: pointer; transition: border-color .25s, color .25s;
+    }
+    .btn-secondary:hover { border-color: var(--silver); color: var(--white); }
+    .hero-scroll {
+      position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      font-family: var(--font-tech); font-size: .7rem; letter-spacing: .2em;
+      text-transform: uppercase; color: var(--muted);
+      animation: bounce 2s ease-in-out infinite;
+    }
+    .hero-scroll::after {
+      content:''; width: 1px; height: 40px; background: linear-gradient(to bottom, var(--muted), transparent);
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+
+    /* Ticker */
+    .ticker-wrap {
+      background: var(--red); overflow: hidden; white-space: nowrap;
+      padding: 12px 0;
+    }
+    .ticker-inner {
+      display: inline-flex; gap: 0;
+      animation: ticker 28s linear infinite;
+    }
+    .ticker-item {
+      font-family: var(--font-tech); font-weight: 700; font-size: .8rem;
+      letter-spacing: .25em; text-transform: uppercase;
+      color: rgba(255,255,255,.9); padding: 0 40px;
+      display: flex; align-items: center; gap: 16px;
+    }
+    .ticker-item::after { content: '●'; font-size: .4rem; }
+    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ─── SECTIONS COMMUNES ──────────────────────────────────── */
+    section { padding: clamp(70px, 10vw, 130px) clamp(20px, 6vw, 80px); }
+    .section-label {
+      font-family: var(--font-tech); font-size: .75rem; font-weight: 600;
+      letter-spacing: .35em; text-transform: uppercase; color: var(--red);
+      display: flex; align-items: center; gap: 12px; margin-bottom: 18px;
+    }
+    .section-label::before { content:''; width: 32px; height: 1px; background: var(--red); }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1; letter-spacing: .04em; color: var(--white);
+      margin-bottom: 24px;
+    }
+    .section-title span { color: var(--gold); }
+    .section-text {
+      font-size: 1rem; color: var(--silver); max-width: 560px; line-height: 1.75;
+    }
+
+    /* Reveal animation */
+    .reveal {
+      opacity: 0; transform: translateY(36px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+
+    /* ─── À PROPOS ───────────────────────────────────────────── */
+    #apropos {
+      background: var(--carbon);
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+    }
+    .apropos-img-wrap {
+      position: relative; aspect-ratio: 4/5; overflow: hidden;
+    }
+    .apropos-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: grayscale(30%) contrast(1.1);
+      transition: transform .6s ease;
+    }
+    .apropos-img-wrap:hover img { transform: scale(1.04); }
+    .apropos-img-wrap::after {
+      content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 60%;
+      background: linear-gradient(to top, rgba(8,8,8,.6), transparent);
+    }
+    /* Red accent border */
+    .apropos-img-wrap::before {
+      content:''; position: absolute; top: -8px; left: -8px;
+      width: 60px; height: 60px;
+      border-top: 2px solid var(--red); border-left: 2px solid var(--red);
+      z-index: 1;
+    }
+    .apropos-stats {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px;
+    }
+    .stat-block {
+      padding: 20px; border: 1px solid var(--border);
+      transition: border-color .3s;
+    }
+    .stat-block:hover { border-color: var(--red); }
+    .stat-num {
+      font-family: var(--font-display); font-size: 2.4rem;
+      color: var(--gold); line-height: 1;
+    }
+    .stat-label {
+      font-family: var(--font-tech); font-size: .78rem;
+      letter-spacing: .15em; text-transform: uppercase;
+      color: var(--muted); margin-top: 6px;
+    }
+
+    /* ─── PRESTATIONS ────────────────────────────────────────── */
+    #prestations { background: var(--black); }
+    .prestations-header {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+      align-items: end; margin-bottom: 64px;
+    }
+    .prestations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1px; background: var(--border);
+    }
+    .prestation-card {
+      background: var(--carbon); padding: 36px 32px;
+      position: relative; overflow: hidden;
+      transition: background .3s;
+    }
+    .prestation-card::before {
+      content:''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px;
+      background: var(--red); transition: width .4s ease;
+    }
+    .prestation-card:hover { background: var(--charcoal); }
+    .prestation-card:hover::before { width: 100%; }
+    .prestation-icon {
+      width: 44px; height: 44px; margin-bottom: 22px;
+      color: var(--red);
+    }
+    .prestation-card h3 {
+      font-family: var(--font-tech); font-size: 1.1rem; font-weight: 700;
+      letter-spacing: .06em; text-transform: uppercase; margin-bottom: 12px;
+      color: var(--white);
+    }
+    .prestation-card p {
+      font-size: .9rem; color: var(--silver); line-height: 1.65;
+    }
+
+    /* ─── GALERIE ────────────────────────────────────────────── */
+    #galerie { background: var(--charcoal); }
+    .galerie-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 220px;
+      gap: 4px; margin-top: 56px;
+    }
+    .galerie-grid .item-wide { grid-column: span 2; }
+    .galerie-grid .item-tall { grid-row: span 2; }
+    .gal-item {
+      position: relative; overflow: hidden; cursor: pointer;
+      background: var(--mid);
+    }
+    .gal-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .5s ease, filter .5s ease;
+      filter: grayscale(20%);
+    }
+    .gal-item:hover img { transform: scale(1.07); filter: grayscale(0%); }
+    .gal-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(200,16,46,.6) 0%, transparent 60%);
+      opacity: 0; transition: opacity .4s;
+      display: flex; align-items: flex-end; padding: 20px;
+    }
+    .gal-overlay span {
+      font-family: var(--font-tech); font-size: .8rem;
+      letter-spacing: .2em; text-transform: uppercase; color: #fff;
+    }
+    .gal-item:hover .gal-overlay { opacity: 1; }
+    /* Placeholder photo */
+    .gal-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 12px;
+      font-family: var(--font-tech); font-size: .8rem;
+      letter-spacing: .15em; text-transform: uppercase;
+      color: var(--muted); background: var(--mid);
+    }
+
+    /* Lightbox */
+    #lightbox {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(0,0,0,.95);
+      align-items: center; justify-content: center;
+    }
+    #lightbox.active { display: flex; }
+    .lb-content {
+      position: relative; max-width: 90vw; max-height: 90vh;
+    }
+    .lb-content img { max-width: 100%; max-height: 85vh; object-fit: contain; }
+    .lb-close {
+      position: absolute; top: -44px; right: 0;
+      background: none; border: none; color: var(--white);
+      font-size: 2rem; cursor: pointer; line-height: 1;
+    }
+    .lb-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(200,16,46,.8); border: none; color: #fff;
+      width: 44px; height: 44px; cursor: pointer; font-size: 1.2rem;
+      display: flex; align-items: center; justify-content: center;
+      transition: background .2s;
+    }
+    .lb-nav:hover { background: var(--red); }
+    .lb-prev { left: -60px; }
+    .lb-next { right: -60px; }
+
+    /* ─── DEVIS ──────────────────────────────────────────────── */
+    #devis {
+      background: var(--black);
+      display: grid; grid-template-columns: 1fr 1.6fr; gap: 80px; align-items: start;
+    }
+    .devis-aside { position: sticky; top: calc(var(--nav-h) + 30px); }
+    .devis-aside ul {
+      list-style: none; margin-top: 36px;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .devis-aside ul li {
+      display: flex; align-items: center; gap: 12px;
+      font-family: var(--font-tech); font-size: .9rem;
+      letter-spacing: .1em; color: var(--silver);
+    }
+    .devis-aside ul li::before {
+      content:''; width: 6px; height: 6px;
+      background: var(--red); border-radius: 50%; flex-shrink: 0;
+    }
+    form { display: flex; flex-direction: column; gap: 28px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    label {
+      font-family: var(--font-tech); font-size: .78rem;
+      letter-spacing: .2em; text-transform: uppercase; color: var(--muted);
+    }
+    input, select, textarea {
+      background: var(--charcoal); border: 1px solid var(--border);
+      color: var(--white); padding: 14px 16px;
+      font-family: var(--font-body); font-size: .95rem;
+      outline: none; transition: border-color .25s, background .25s;
+      appearance: none; -webkit-appearance: none; width: 100%;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--red); background: var(--mid);
+    }
+    select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
+    textarea { resize: vertical; min-height: 120px; }
+    .form-section-title {
+      font-family: var(--font-display); font-size: 1.4rem;
+      letter-spacing: .06em; color: var(--gold);
+      border-bottom: 1px solid var(--border); padding-bottom: 12px;
+    }
+    .checkboxes-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+    }
+    .checkbox-item {
+      display: flex; align-items: center; gap: 10px;
+      cursor: pointer; user-select: none;
+    }
+    .checkbox-item input[type="checkbox"] {
+      width: 18px; height: 18px; padding: 0; flex-shrink: 0;
+      accent-color: var(--red); cursor: pointer;
+    }
+    .checkbox-item span {
+      font-family: var(--font-tech); font-size: .85rem;
+      letter-spacing: .05em; color: var(--silver);
+      transition: color .2s;
+    }
+    .checkbox-item:hover span { color: var(--white); }
+    .file-upload-area {
+      border: 1px dashed var(--border); padding: 24px;
+      text-align: center; cursor: pointer; transition: border-color .25s;
+      position: relative;
+    }
+    .file-upload-area:hover { border-color: var(--silver); }
+    .file-upload-area input[type="file"] {
+      position: absolute; inset: 0; opacity: 0; cursor: pointer;
+      width: 100%; height: 100%;
+    }
+    .file-upload-text {
+      font-family: var(--font-tech); font-size: .85rem;
+      letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
+      pointer-events: none;
+    }
+    .form-notice {
+      font-size: .8rem; color: var(--muted); line-height: 1.6;
+    }
+
+    /* ─── CONTACT ────────────────────────────────────────────── */
+    #contact { background: var(--carbon); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px;
+      margin-top: 56px; align-items: start;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 32px; }
+    .contact-block {}
+    .contact-block h4 {
+      font-family: var(--font-tech); font-size: .75rem; font-weight: 600;
+      letter-spacing: .3em; text-transform: uppercase; color: var(--red);
+      margin-bottom: 10px;
+    }
+    .contact-block p {
+      font-size: .95rem; color: var(--silver); line-height: 1.7;
+    }
+    .contact-block a { color: var(--white); transition: color .2s; }
+    .contact-block a:hover { color: var(--red); }
+    .map-container {
+      aspect-ratio: 16/10; background: var(--mid);
+      overflow: hidden; position: relative;
+    }
+    .map-container iframe {
+      width: 100%; height: 100%; border: 0; filter: grayscale(80%) invert(10%);
+      transition: filter .4s;
+    }
+    .map-container:hover iframe { filter: grayscale(30%) invert(5%); }
+    .map-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 12px;
+      font-family: var(--font-tech); font-size: .85rem;
+      letter-spacing: .15em; text-transform: uppercase; color: var(--muted);
+    }
+    .socials { display: flex; gap: 16px; margin-top: 24px; }
+    .social-link {
+      width: 42px; height: 42px; border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--silver); transition: border-color .25s, color .25s, background .25s;
+    }
+    .social-link:hover { border-color: var(--red); color: #fff; background: var(--red); }
+
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+    footer {
+      background: var(--black); border-top: 1px solid var(--border);
+      padding: 48px clamp(20px, 6vw, 80px);
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 48px; margin-bottom: 48px;
+    }
+    .footer-brand .footer-logo {
+      font-family: var(--font-display); font-size: 1.5rem; letter-spacing: .08em;
+    }
+    .footer-brand .footer-logo span { color: var(--gold); }
+    .footer-brand p { margin-top: 16px; font-size: .88rem; color: var(--muted); line-height: 1.7; }
+    .footer-col h5 {
+      font-family: var(--font-tech); font-size: .72rem; font-weight: 700;
+      letter-spacing: .3em; text-transform: uppercase; color: var(--silver);
+      margin-bottom: 20px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a {
+      font-size: .88rem; color: var(--muted); transition: color .2s;
+    }
+    .footer-col ul li a:hover { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid var(--border); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+      font-size: .8rem; color: var(--muted);
+    }
+    .footer-bottom a { color: var(--muted); transition: color .2s; }
+    .footer-bottom a:hover { color: var(--silver); }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      #apropos { grid-template-columns: 1fr; gap: 48px; }
+      .prestations-header { grid-template-columns: 1fr; }
+      #devis { grid-template-columns: 1fr; gap: 48px; }
+      .devis-aside { position: static; }
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .galerie-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
+      .galerie-grid .item-wide { grid-column: span 1; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .burger { display: flex; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .checkboxes-grid { grid-template-columns: 1fr; }
+      .galerie-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; }
+      .apropos-stats { grid-template-columns: 1fr 1fr; }
+      .lb-prev { left: -40px; }
+      .lb-next { right: -40px; }
+    }
+    @media (max-width: 480px) {
+      .galerie-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
+      .galerie-grid .item-wide, .galerie-grid .item-tall { grid-column: span 1; grid-row: span 1; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    /* ─── BACK TO TOP ────────────────────────────────────────── */
+    #btt {
+      position: fixed; bottom: 30px; right: 30px; z-index: 50;
+      width: 44px; height: 44px; background: var(--red);
+      border: none; cursor: pointer; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity .3s, transform .3s;
+    }
+    #btt.visible { opacity: 1; pointer-events: all; }
+    #btt:hover { transform: translateY(-4px); }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">Exhaust <span>Custom 77</span></a>
+  <ul class="nav-links">
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#prestations">Prestations</a></li>
+    <li><a href="#galerie">Galerie</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#devis" class="nav-cta">Devis gratuit</a>
+  <button class="burger" aria-label="Menu" id="burgerBtn">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#apropos" class="mobile-link">À propos</a>
+  <a href="#prestations" class="mobile-link">Prestations</a>
+  <a href="#galerie" class="mobile-link">Galerie</a>
+  <a href="#devis" class="mobile-link">Devis</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+
+  <!-- Exhaust pipes SVG décoratif -->
+  <svg class="hero-exhaust-svg" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M50 200 C150 200 200 120 300 120 C400 120 450 200 550 200" stroke="white" stroke-width="18" stroke-linecap="round"/>
+    <path d="M50 200 C150 200 200 280 300 280 C400 280 450 200 550 200" stroke="white" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="50" cy="200" r="24" stroke="white" stroke-width="8"/>
+    <circle cx="550" cy="200" r="24" stroke="white" stroke-width="8"/>
+    <circle cx="550" cy="200" r="14" fill="white"/>
+    <circle cx="50" cy="200" r="14" fill="white"/>
+    <!-- Tubes supplémentaires -->
+    <path d="M30 200 L0 180" stroke="white" stroke-width="14" stroke-linecap="round"/>
+    <path d="M30 200 L0 220" stroke="white" stroke-width="14" stroke-linecap="round"/>
+    <path d="M570 200 L600 180" stroke="white" stroke-width="14" stroke-linecap="round"/>
+    <path d="M570 200 L600 220" stroke="white" stroke-width="14" stroke-linecap="round"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal">Soudure · Fabrication · Mécanique</div>
+    <h1 class="hero-h1 reveal reveal-delay-1">
+      L'échappement<br /><em>sur mesure.</em><br />Votre signature<br />sonore.
+    </h1>
+    <p class="hero-sub reveal reveal-delay-2">
+      Artisan spécialisé dans la fabrication et la modification d'échappements automobiles. Chaque ligne est conçue à la main, adaptée à votre véhicule, à votre usage et à votre envie.
+    </p>
+    <div class="hero-actions reveal reveal-delay-3">
+      <a href="#devis" class="btn-primary">
+        Demander un devis
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#prestations" class="btn-secondary">Voir les prestations</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">Scroll</div>
+</section>
+
+<!-- Ticker -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-inner">
+    <span class="ticker-item">Lignes sur mesure</span>
+    <span class="ticker-item">Suppression FAP</span>
+    <span class="ticker-item">Suppression GPF</span>
+    <span class="ticker-item">Downpipes</span>
+    <span class="ticker-item">Valves d'échappement</span>
+    <span class="ticker-item">Silencieux sport</span>
+    <span class="ticker-item">Embouts inox</span>
+    <span class="ticker-item">Sonorité personnalisée</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="ticker-item">Lignes sur mesure</span>
+    <span class="ticker-item">Suppression FAP</span>
+    <span class="ticker-item">Suppression GPF</span>
+    <span class="ticker-item">Downpipes</span>
+    <span class="ticker-item">Valves d'échappement</span>
+    <span class="ticker-item">Silencieux sport</span>
+    <span class="ticker-item">Embouts inox</span>
+    <span class="ticker-item">Sonorité personnalisée</span>
+  </div>
+</div>
+
+<!-- ═══ À PROPOS ═══ -->
+<section id="apropos">
+  <div class="apropos-img-wrap reveal">
+    <!-- Remplacer src par une vraie photo de l'atelier ou du travail -->
+    <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;color:#444;font-family:'Rajdhani',sans-serif;font-size:.9rem;letter-spacing:.15em;text-transform:uppercase;min-height:400px;">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      Photo atelier
+    </div>
+  </div>
+  <div>
+    <p class="section-label reveal">À propos</p>
+    <h2 class="section-title reveal reveal-delay-1">Artisan<br /><span>passionné,</span><br />résultats concrets.</h2>
+    <p class="section-text reveal reveal-delay-2">
+      Exhaust Custom 77, c'est un atelier spécialisé dans tout ce qui concerne l'échappement automobile. Passionné par le travail du métal et la mécanique de haute précision, nous fabriquons chaque ligne à la main, du collecteur jusqu'aux embouts, en inox de qualité.
+    </p>
+    <p class="section-text reveal reveal-delay-3" style="margin-top:16px;">
+      Basé en Seine-et-Marne, nous intervenons sur toutes les marques et motorisations. Notre approche : écouter votre projet, proposer une solution adaptée, et livrer un travail dont vous serez fier — visuellement et acoustiquement.
+    </p>
+    <div class="apropos-stats reveal reveal-delay-4">
+      <div class="stat-block">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Fabrication sur mesure</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">Inox</div>
+        <div class="stat-label">Matériaux de qualité</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">77</div>
+        <div class="stat-label">Seine-et-Marne</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">TIG</div>
+        <div class="stat-label">Soudure de précision</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRESTATIONS ═══ -->
+<section id="prestations">
+  <div class="prestations-header">
+    <div>
+      <p class="section-label reveal">Ce que nous faisons</p>
+      <h2 class="section-title reveal reveal-delay-1">Nos<br /><span>Prestations</span></h2>
+    </div>
+    <p class="section-text reveal reveal-delay-2" style="align-self:end;">
+      De la fabrication complète à la simple modification, chaque intervention est réalisée avec le même soin du détail. Vous repartez avec une ligne parfaitement adaptée à votre véhicule.
+    </p>
+  </div>
+
+  <div class="prestations-grid">
+
+    <div class="prestation-card reveal">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M3 12h18M3 12c0-3.3 2.7-6 6-6h6c3.3 0 6 2.7 6 6M3 12c0 3.3 2.7 6 6 6h6c3.3 0 6-2.7 6-6"/>
+        <circle cx="21" cy="12" r="1.5"/><circle cx="3" cy="12" r="1.5"/>
+      </svg>
+      <h3>Ligne sur mesure</h3>
+      <p>Fabrication intégrale d'une ligne d'échappement adaptée à votre châssis, votre moteur et votre objectif sonore. Chaque coude est cintré à la main.</p>
+    </div>
+
+    <div class="prestation-card reveal reveal-delay-1">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/>
+        <path d="M9 3.5C6 5 4 7.8 4 11" stroke-dasharray="2 2"/>
+      </svg>
+      <h3>Downpipe</h3>
+      <p>Installation ou fabrication d'un downpipe haute performance pour améliorer le flux des gaz et gagner en réponse moteur, avec ou sans catalyseur sport.</p>
+    </div>
+
+    <div class="prestation-card reveal reveal-delay-2">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <rect x="4" y="8" width="16" height="8" rx="2"/><path d="M8 8V6m8 2V6M8 16v2m8-2v2"/>
+        <path d="M10 12h4" stroke-dasharray="1 1"/>
+      </svg>
+      <h3>Suppression FAP</h3>
+      <p>Suppression mécanique du filtre à particules avec remplacement par un tube de remplacement en inox. Intervention propre et durable.</p>
+    </div>
+
+    <div class="prestation-card reveal reveal-delay-3">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+        <path d="M8 12h8M12 8v8" stroke-dasharray="2 2"/>
+      </svg>
+      <h3>Suppression GPF</h3>
+      <p>Retrait du filtre à particules essence (GPF/OPF) sur les moteurs à injection directe. Solution mécanique solide et étanche.</p>
+    </div>
+
+    <div class="prestation-card reveal">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M3 12c0-5 3.5-8 9-8s9 3 9 8-3.5 8-9 8-9-3-9-8z"/><path d="M12 4v16M8 8l8 8M8 16l8-8"/>
+      </svg>
+      <h3>Suppression catalyseur</h3>
+      <p>Remplacement du catalyseur d'origine par un tube de remplacement en inox ou par un catalyseur sport haute performance à cellules renforcées.</p>
+    </div>
+
+    <div class="prestation-card reveal reveal-delay-1">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M12 3v18M5 8h14M5 16h14"/><circle cx="12" cy="8" r="2"/><circle cx="12" cy="16" r="2"/>
+      </svg>
+      <h3>Installation de valves</h3>
+      <p>Pose de valves électroniques ou pneumatiques sur votre ligne. Profitez d'une sonorité discrète au quotidien et libérée à l'accélération.</p>
+    </div>
+
+    <div class="prestation-card reveal reveal-delay-2">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <ellipse cx="12" cy="12" rx="8" ry="5"/><path d="M4 12c0 3 3.6 5.5 8 5.5S20 15 20 12"/>
+        <path d="M4 12C4 9 7.6 6.5 12 6.5S20 9 20 12"/>
+      </svg>
+      <h3>Silencieux</h3>
+      <p>Remplacement ou fabrication d'un silencieux sport ou racing selon votre envie. Du son profond et grave au registre sportif acéré, vous choisissez.</p>
+    </div>
+
+    <div class="prestation-card reveal reveal-delay-3">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M5 12h14"/><circle cx="19" cy="12" r="3"/><path d="M5 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      </svg>
+      <h3>Embouts</h3>
+      <p>Large choix d'embouts en inox brossé ou poli : rond, ovale, double sortie, carré. Sur mesure ou sur catalogue, adaptés à votre ligne et à votre carrosserie.</p>
+    </div>
+
+    <div class="prestation-card reveal">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>
+      </svg>
+      <h3>Sonorité personnalisée</h3>
+      <p>Définissez ensemble le son de votre voiture. Grave, sportif, discret ou décomplexé — nous adaptons la configuration pour atteindre exactement le résultat voulu.</p>
+    </div>
+
+    <div class="prestation-card reveal reveal-delay-1" style="grid-column: span 1;">
+      <svg class="prestation-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M12 5v14M5 12h14"/>
+      </svg>
+      <h3>Autre prestation</h3>
+      <p>Un besoin spécifique sur votre échappement ? Contactez-nous directement pour étudier votre projet. Nous intervenons sur toutes les marques et motorisations.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ GALERIE ═══ -->
+<section id="galerie">
+  <p class="section-label reveal">Réalisations</p>
+  <h2 class="section-title reveal reveal-delay-1">Notre <span>Galerie</span></h2>
+  <p class="section-text reveal reveal-delay-2">Chaque photo témoigne d'un travail soigné, de la préparation des tubes jusqu'à la pose finale. Remplacez les images ci-dessous par vos propres réalisations.</p>
+
+  <div class="galerie-grid" id="galerieGrid">
+    <div class="gal-item item-wide item-tall reveal" data-index="0">
+      <div class="gal-placeholder">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Photo 1
+      </div>
+      <div class="gal-overlay"><span>Ligne complète sur mesure</span></div>
+    </div>
+    <div class="gal-item reveal reveal-delay-1" data-index="1">
+      <div class="gal-placeholder">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Photo 2
+      </div>
+      <div class="gal-overlay"><span>Downpipe inox</span></div>
+    </div>
+    <div class="gal-item reveal reveal-delay-2" data-index="2">
+      <div class="gal-placeholder">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Photo 3
+      </div>
+      <div class="gal-overlay"><span>Embouts double sortie</span></div>
+    </div>
+    <div class="gal-item item-wide reveal" data-index="3">
+      <div class="gal-placeholder">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Photo 4
+      </div>
+      <div class="gal-overlay"><span>Travail de cintrage</span></div>
+    </div>
+    <div class="gal-item reveal reveal-delay-1" data-index="4">
+      <div class="gal-placeholder">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Photo 5
+      </div>
+      <div class="gal-overlay"><span>Valve électronique</span></div>
+    </div>
+    <div class="gal-item reveal reveal-delay-2" data-index="5">
+      <div class="gal-placeholder">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Photo 6
+      </div>
+      <div class="gal-overlay"><span>Soudure TIG</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie agrandie">
+  <div class="lb-content">
+    <button class="lb-close" id="lbClose" aria-label="Fermer">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Image précédente">‹</button>
+    <img id="lbImg" src="" alt="Réalisation Exhaust Custom 77" />
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Image suivante">›</button>
+  </div>
+</div>
+
+<!-- ═══ DEVIS ═══ -->
+<section id="devis">
+  <div class="devis-aside">
+    <p class="section-label reveal">Gratuit & sans engagement</p>
+    <h2 class="section-title reveal reveal-delay-1">Demandez<br />votre <span>Devis</span></h2>
+    <p class="section-text reveal reveal-delay-2">
+      Décrivez votre véhicule et ce que vous souhaitez modifier. Nous étudions chaque demande sérieusement et vous répondons dans les plus brefs délais.
+    </p>
+    <ul class="reveal reveal-delay-3">
+      <li>Réponse sous 24–48h</li>
+      <li>Devis personnalisé et détaillé</li>
+      <li>Aucun engagement</li>
+      <li>Conseil expert inclus</li>
+      <li>Tarif transparent</li>
+    </ul>
+  </div>
+
+  <form id="devisForm" action="#" method="POST" enctype="multipart/form-data" novalidate>
+
+    <div class="form-section-title reveal">Votre véhicule</div>
+
+    <div class="form-row reveal reveal-delay-1">
+      <div class="form-group">
+        <label for="marque">Marque *</label>
+        <input type="text" id="marque" name="marque" placeholder="Ex : BMW, Renault, Audi…" required />
+      </div>
+      <div class="form-group">
+        <label for="modele">Modèle *</label>
+        <input type="text" id="modele" name="modele" placeholder="Ex : M3, Clio RS, A4…" required />
+      </div>
+    </div>
+
+    <div class="form-row reveal reveal-delay-2">
+      <div class="form-group">
+        <label for="annee">Année</label>
+        <input type="number" id="annee" name="annee" placeholder="Ex : 2019" min="1970" max="2025" />
+      </div>
+      <div class="form-group">
+        <label for="motorisation">Motorisation</label>
+        <input type="text" id="motorisation" name="motorisation" placeholder="Ex : 2.0 TDI 150ch" />
+      </div>
+    </div>
+
+    <div class="form-section-title reveal">Prestations souhaitées *</div>
+
+    <div class="checkboxes-grid reveal reveal-delay-1">
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="ligne_mesure" /><span>Ligne sur mesure</span></label>
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="downpipe" /><span>Downpipe</span></label>
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="suppression_fap" /><span>Suppression FAP</span></label>
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="suppression_gpf" /><span>Suppression GPF</span></label>
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="suppression_cat" /><span>Suppression catalyseur</span></label>
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="valves" /><span>Installation de valves</span></label>
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="silencieux" /><span>Silencieux</span></label>
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="embouts" /><span>Embouts</span></label>
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="sonorité" /><span>Modification de sonorité</span></label>
+      <label class="checkbox-item"><input type="checkbox" name="prestations" value="autre" /><span>Autre</span></label>
+    </div>
+
+    <div class="form-group reveal">
+      <label for="commentaire">Décrivez votre projet</label>
+      <textarea id="commentaire" name="commentaire" placeholder="Précisez vos attentes : objectif sonore, contraintes, informations complémentaires…"></textarea>
+    </div>
+
+    <div class="form-group reveal">
+      <label>Photos du véhicule (optionnel)</label>
+      <div class="file-upload-area">
+        <input type="file" name="photos" accept="image/*" multiple aria-label="Uploader des photos du véhicule" />
+        <div class="file-upload-text">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" style="margin:0 auto 8px;" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          Glissez vos photos ici ou cliquez pour sélectionner
+        </div>
+      </div>
+      <p id="fileNames" style="font-size:.8rem;color:var(--muted);margin-top:6px;"></p>
+    </div>
+
+    <div class="form-section-title reveal">Vos coordonnées</div>
+
+    <div class="form-row reveal reveal-delay-1">
+      <div class="form-group">
+        <label for="nom">Nom *</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+      </div>
+      <div class="form-group">
+        <label for="tel">Téléphone *</label>
+        <input type="tel" id="tel" name="tel" placeholder="06 XX XX XX XX" required />
+      </div>
+    </div>
+
+    <div class="form-group reveal reveal-delay-2">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+    </div>
+
+    <p class="form-notice reveal">
+      * Champs obligatoires. Vos données sont utilisées uniquement pour répondre à votre demande de devis. Aucun démarchage commercial.
+    </p>
+
+    <button type="submit" class="btn-primary reveal" style="align-self:flex-start;">
+      Envoyer la demande
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div id="formMsg" style="display:none;padding:14px 20px;font-family:var(--font-tech);font-size:.9rem;letter-spacing:.1em;"></div>
+
+  </form>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <p class="section-label reveal">Nous trouver</p>
+  <h2 class="section-title reveal reveal-delay-1">Contact &<br /><span>Accès</span></h2>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-block reveal">
+        <h4>Adresse</h4>
+        <p>
+          [À compléter]<br />
+          Seine-et-Marne (77), France
+        </p>
+      </div>
+      <div class="contact-block reveal reveal-delay-1">
+        <h4>Téléphone</h4>
+        <p><a href="tel:+33XXXXXXXXX">[À compléter]</a></p>
+      </div>
+      <div class="contact-block reveal reveal-delay-2">
+        <h4>Email</h4>
+        <p><a href="mailto:contact@exhaustcustom77.fr">[À compléter]</a></p>
+      </div>
+      <div class="contact-block reveal reveal-delay-3">
+        <h4>Horaires</h4>
+        <p>
+          [À compléter]<br />
+          Sur rendez-vous
+        </p>
+      </div>
+      <div class="socials reveal reveal-delay-4">
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="map-container reveal reveal-delay-2">
+      <!-- Remplacez les coordonnées par celles de votre atelier -->
+      <div class="map-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Remplacez par votre iframe Google Maps</span>
+        <span style="font-size:.7rem;letter-spacing:.1em;color:#3a3a3a;">Seine-et-Marne (77)</span>
+      </div>
+      <!-- Exemple d'iframe à décommenter et adapter :
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!..."
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Localisation Exhaust Custom 77">
+      </iframe>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">Exhaust <span>Custom 77</span></div>
+      <p>Spécialiste de l'échappement sur mesure en Seine-et-Marne. Soudure, fabrication et mécanique de haute précision.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#prestations">Prestations</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#devis">Devis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Prestations</h5>
+      <ul>
+        <li><a href="#prestations">Ligne sur mesure</a></li>
+        <li><a href="#prestations">Downpipe</a></li>
+        <li><a href="#prestations">Suppression FAP / GPF</a></li>
+        <li><a href="#prestations">Valves d'échappement</a></li>
+        <li><a href="#prestations">Silencieux & embouts</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 Exhaust Custom 77 — Tous droits réservés.</span>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;">
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="btt" aria-label="Retour en haut">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+    <path d="M8 12V4M4 8l4-4 4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<script>
+  /* ─── NAV SCROLL ─────────────────────────── */
+  const nav = document.getElementById('nav');
+  const btt = document.getElementById('btt');
+  window.addEventListener('scroll', () => {
+    const s = window.scrollY;
+    nav.classList.toggle('scrolled', s > 60);
+    btt.classList.toggle('visible', s > 400);
+  }, { passive: true });
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* ─── BURGER MENU ────────────────────────── */
+  const burgerBtn = document.getElementById('burgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileClose = document.getElementById('mobileClose');
+  burgerBtn.addEventListener('click', () => { mobileMenu.classList.add('open'); document.body.style.overflow='hidden'; });
+  mobileClose.addEventListener('click', closeMobile);
+  document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMobile));
+  function closeMobile() { mobileMenu.classList.remove('open'); document.body.style.overflow=''; }
+
+  /* ─── REVEAL ON SCROLL ───────────────────── */
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => observer.observe(r));
+
+  /* ─── LIGHTBOX ───────────────────────────── */
+  const lightbox = document.getElementById('lightbox');
+  const lbImg    = document.getElementById('lbImg');
+  const lbClose  = document.getElementById('lbClose');
+  const lbPrev   = document.getElementById('lbPrev');
+  const lbNext   = document.getElementById('lbNext');
+  const galItems  = Array.from(document.querySelectorAll('.gal-item'));
+  let currentLb   = 0;
+
+  galItems.forEach((item, i) => {
+    item.addEventListener('click', () => {
+      const img = item.querySelector('img');
+      if (!img) return; // placeholder, pas d'image
+      currentLb = i;
+      openLb(img.src, img.alt);
+    });
+  });
+
+  function openLb(src, alt) {
+    lbImg.src = src; lbImg.alt = alt || '';
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLb() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function navLb(dir) {
+    const imgs = galItems.map(i => i.querySelector('img')).filter(Boolean);
+    if (!imgs.length) return;
+    currentLb = (currentLb + dir + imgs.length) % imgs.length;
+    lbImg.src = imgs[currentLb].src;
+  }
+
+  lbClose.addEventListener('click', closeLb);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLb(); });
+  lbPrev.addEventListener('click', e => { e.stopPropagation(); navLb(-1); });
+  lbNext.addEventListener('click', e => { e.stopPropagation(); navLb(1); });
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') navLb(-1);
+    if (e.key === 'ArrowRight') navLb(1);
+  });
+
+  /* ─── FILE UPLOAD DISPLAY ────────────────── */
+  const fileInput = document.querySelector('input[type="file"]');
+  const fileNames = document.getElementById('fileNames');
+  if (fileInput) {
+    fileInput.addEventListener('change', () => {
+      const files = Array.from(fileInput.files).map(f => f.name);
+      fileNames.textContent = files.length ? files.join(', ') : '';
+    });
+  }
+
+  /* ─── FORM SUBMIT ────────────────────────── */
+  const form    = document.getElementById('devisForm');
+  const formMsg = document.getElementById('formMsg');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    // Vérification basique
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(f => {
+      f.style.borderColor = '';
+      if (!f.value.trim()) { f.style.borderColor = 'var(--red)'; valid = false; }
+    });
+    if (!valid) {
+      formMsg.style.display = 'block';
+      formMsg.style.color = 'var(--red)';
+      formMsg.style.borderLeft = '2px solid var(--red)';
+      formMsg.textContent = 'Merci de remplir tous les champs obligatoires.';
+      return;
+    }
+    // Ici : connectez à Formspree, Netlify Forms, PHP, etc.
+    // Exemple Formspree : form.action = "https://formspree.io/f/XXXXXX";
+    formMsg.style.display = 'block';
+    formMsg.style.color = '#4CAF50';
+    formMsg.style.borderLeft = '2px solid #4CAF50';
+    formMsg.textContent = 'Demande envoyée ! Nous vous répondrons dans les plus brefs délais.';
+    form.reset();
+  });
+</script>
+</body>
+</html>
